@@ -1,1 +1,7 @@
-print("Hello, Expense Tracker!")
+from fastapi import FastAPI
+
+app = FastAPI()
+
+@app.get("/")
+def root():
+    return {"message": "Hello from Expense Tracker API!"}
