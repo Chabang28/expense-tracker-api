@@ -1,12 +1,10 @@
-from sqlalchemy import Table, Column, Integer, String, Float, MetaData
+from sqlalchemy import Column, Integer, String, Float
+from app.database import Base
 
-metadata = MetaData()
+class Expense(Base):
+    __tablename__ = "expenses"
 
-expenses = Table(
-    "expenses",
-    metadata,
-    Column("id", Integer, primary_key=True),
-    Column("title", String(100)),
-    Column("amount", Float),
-    Column("category", String(50)),
-)
+    id = Column(Integer, primary_key=True, index=True)
+    title = Column(String, index=True)
+    amount = Column(Float)
+    description = Column(String, nullable=True)

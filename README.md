@@ -1,15 +1,29 @@
-# Expense Tracker API
+# 📊 Expense Tracker API
 
-A simple and efficient backend API to track personal expenses, built with FastAPI and SQLite.
+A backend API to track personal expenses, built with FastAPI, SQLAlchemy, and SQLite.  
+Create, read, update, and delete expenses easily via a RESTful API.
 
-## Features
+---
 
-- Add, view, update, and delete expenses
-- Uses FastAPI for high performance
-- Async database operations with SQLAlchemy and databases package
-- Designed for easy extension and integration with frontend apps
+## 🚀 Live Demo
 
-## Installation
+Try the API live in your browser:  
+[Expense Tracker API on Render](https://expense-tracker-api-3-f1be.onrender.com/docs)
+
+---
+
+## 🛠️ Technologies Used
+
+- FastAPI
+- SQLite
+- SQLAlchemy
+- Pydantic
+- Passlib (bcrypt)
+- Uvicorn
+
+---
+
+## 📌 Getting Started (Run Locally)
 
 1. Clone the repository:
 
